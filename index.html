@@ -4,20 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>WebStudio</title>
+  <title>Главная</title>
   <meta name="description" content="Студия веб технологий">
   <meta name="keywords" content="web, studio, developer, design, website, сайт, разработка, веб, услуги">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="page">
-<header class="header page__header">
+<header class="header">
   <div class="container">
-    <a class="logo" href="/" title="на главную страницу - WebStudio"><span class="logo__prefix">Web</span>Studio</a>
+    <a class="logo header__logo" href="index.html" title="На главную страницу - WebStudio"><span class="logo__prefix">Web</span>Studio</a>
     <nav class="navigation">
       <ul class="navigation__list">
-        <li><a class="navigation__link" href="/" title="На главную страницу">Студия</a></li>
-        <li><a class="navigation__link" href="#" title="Посмотреть наши работы">Портфолио</a></li>
+        <li><a class="navigation__link navigation__link--active" href="index.html"
+               title="На главную страницу">Студия</a></li>
+        <li><a class="navigation__link" href="portfolio.html" title="Посмотреть наши работы">Портфолио</a></li>
         <li><a class="navigation__link" href="#" title="Связаться с нами">Контакты</a></li>
       </ul>
     </nav>
@@ -28,7 +31,7 @@
   </div>
 </header>
 
-<main class="main page__main">
+<main class="main">
   <section class="intro">
     <h1 class="intro__title">Эффективные решения для вашего бизнеса</h1>
     <button class="button intro__button" type="button">Заказать услугу</button>
@@ -94,34 +97,42 @@
         <li class="team__item card">
           <img class="card__img" width="270" src="images/team/product_designer.jpg" title="Игорь Демьяненко"
                alt="Продуктовый дизайнер">
-          <h3 class="card__title">Игорь Демьяненко</h3>
-          <p class="card__subtitle" lang="en">Product Designer</p>
+          <div class="card__wrapper">
+            <h3 class="card__title">Игорь Демьяненко</h3>
+            <p class="card__subtitle" lang="en">Product Designer</p>
+          </div>
         </li>
         <li class="team__item card">
           <img class="card__img" width="270" src="images/team/frontend_developer.jpg" title="Ольга Репина"
                alt="Фронтэнд разработчик">
-          <h3 class="card__title">Ольга Репина</h3>
-          <p class="card__subtitle" lang="en">Frontend Developer</p>
+          <div class="card__wrapper">
+            <h3 class="card__title">Ольга Репина</h3>
+            <p class="card__subtitle" lang="en">Frontend Developer</p>
+          </div>
         </li>
         <li class="team__item card">
           <img class="card__img" width="270" src="images/team/marketing.jpg" title="Николай Тарасов" alt="Маркетолог">
-          <h3 class="card__title">Николай Тарасов</h3>
-          <p class="card__subtitle" lang="en">Marketing</p>
+          <div class="card__wrapper">
+            <h3 class="card__title">Николай Тарасов</h3>
+            <p class="card__subtitle" lang="en">Marketing</p>
+          </div>
         </li>
         <li class="team__item card">
           <img class="card__img" width="270" src="images/team/ui_designer.jpg" title="Михаил Ермаков"
                alt="Дизайнер интерфейсов">
-          <h3 class="card__title">Михаил Ермаков</h3>
-          <p class="card__subtitle" lang="en">UI Designer</p>
+          <div class="card__wrapper">
+            <h3 class="card__title">Михаил Ермаков</h3>
+            <p class="card__subtitle" lang="en">UI Designer</p>
+          </div>
         </li>
       </ul>
     </div>
   </section>
 </main>
 
-<footer class="footer page__footer">
-  <div class="container">
-    <a class="logo" href="/" title="на главную страницу - WebStudio"><span class="logo__prefix">Web</span>Studio</a>
+<footer class="footer">
+  <div class="container footer__container">
+    <a class="logo footer__logo" href="/" title="на главную страницу - WebStudio"><span class="logo__prefix">Web</span>Studio</a>
     <address class="address">
       <ul class="address__list">
         <li><a class="address__main"
