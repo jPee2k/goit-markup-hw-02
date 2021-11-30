@@ -9,6 +9,7 @@
   --logo-color: #000000;
   --team-bg-color: #F5F4FA;
   --card-color: #FFFFFF;
+  --card-border-color: #EEEEEE;
 }
 
 *, *::before, *::after {
@@ -176,7 +177,7 @@
 .button {
   width: 200px;
   min-height: 50px;
-  padding: 0 15px;
+  padding: 0 22px;
 
   font-size: 16px;
   font-weight: 700;
@@ -262,6 +263,10 @@
   line-height: 1;
 }
 
+.services__img {
+  display: block;
+}
+
 
 /* --- team --- */
 
@@ -299,7 +304,7 @@
 }
 
 .card__wrapper {
-  padding: 26px 15px 30px;
+  padding: 26px 22px 30px;
 }
 
 .card__wrapper > * {
@@ -365,4 +370,91 @@
 .address .contacts__link {
   padding: 0;
   line-height: inherit;
+}
+
+
+/* --- portfolio --- */
+
+.portfolio__container {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.portfolio__container > *:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.filter,
+.catalog {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* --- filter --- */
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.filter__button {
+  min-height: 38px;
+  width: auto;
+
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
+  background-color: var(--team-bg-color);
+}
+
+.filter__button--active,
+.filter__button:hover,
+.filter__button:focus-visible {
+  background-color: var(--main-color);
+  color: var(--title-color);
+}
+
+
+/* --- catalog --- */
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 370px);
+  justify-content: center;
+  grid-gap: 30px;
+}
+
+.catalog .card {
+  box-shadow: none;
+  border-radius: initial;
+}
+
+.catalog .card__img {
+  display: block;
+}
+
+.catalog .card__wrapper {
+  text-align: left;
+  padding: 20px 23px 19px;
+  border: 1px solid var(--card-border-color);
+  border-top: none;
+}
+
+.catalog .card__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
+}
+
+.catalog .card__subtitle {
+  line-height: 1.875;
 }
